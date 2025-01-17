@@ -6,7 +6,7 @@ from langchain_ollama.llms import OllamaLLM
 from groq import Groq
 
 # Initialize Groq client
-GROQ_API_KEY = "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"
+GROQ_API_KEY = "gsk_un8ZVsPl7VN62OF09JnUWGdyb3F"
 groq_client = Groq(api_key=GROQ_API_KEY)
 
 # Function to initialize embeddings
