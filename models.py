@@ -4,9 +4,13 @@ from langchain.chains import RetrievalQA
 from langchain_core.prompts import ChatPromptTemplate
 from langchain_ollama.llms import OllamaLLM
 from groq import Groq
+from dotenv import load_dotenv
+import os 
 
+# Load environment variables from the .env file
+load_dotenv()
 # Initialize Groq client
-GROQ_API_KEY = "gsk_un8ZVsPl7VN62OF09JnUWGdyb3F"
+GROQ_API_KEY = os.getenv("GROQ_API_KEY") 
 groq_client = Groq(api_key=GROQ_API_KEY)
 
 # Function to initialize embeddings
